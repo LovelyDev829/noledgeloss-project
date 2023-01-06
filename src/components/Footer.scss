@@ -4,7 +4,7 @@
     bottom: 0px;
     left: 0px;
     background-color: #54A3EC;
-    padding: 35px 140px 35px 140px;
+    padding: 25px 140px 25px 140px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -38,20 +38,9 @@
     .Footer{
         display: grid;
         .left{
-            justify-content: center;
-            display: grid;
-            .icon-box{
-                justify-content: center;
-                padding: 5px 0px 5px 0px;
-            }
+            display: none;
         }
-        padding: 20px 20px 20px 20px;
+        padding: 25px 0px 25px 0px;
         justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 410px) {
-    .Footer{
-        padding: 10px 20px 10px 20px;
     }
 }
