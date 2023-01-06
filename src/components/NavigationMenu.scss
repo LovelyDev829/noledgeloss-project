@@ -17,6 +17,7 @@
         padding: 19px;
         display: flex;
         align-items: center;
+        height: fit-content;
         // &:hover{
         //     background-color: #F0F0F0;
         //     border-radius: 15px;
@@ -43,6 +44,37 @@
         width: 64px;
         p{
             display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 815px) {
+    .NavigationMenu{
+        padding: 30px 3px 20px 3px;
+        .button{
+            padding: 15px;
+        }
+        &.mouse-up{
+            width: 58px;
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .NavigationMenu{
+        padding: 20px 3px 10px 3px;
+        .button{
+            padding: 10px;
+        }
+        &.mouse-up{
+            width: 46px;
+            p{
+                display: none;
+            }
         }
     }
 }
