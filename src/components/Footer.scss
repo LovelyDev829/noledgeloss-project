@@ -1,0 +1,36 @@
+.Footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    background-color: #54A3EC;
+    padding: 50px 140px 50px 140px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+        display: flex;
+        align-items: center;
+    }
+    .icon-box{
+        display: flex;
+        align-items: center;
+        padding-left: 41px;
+        .icon{
+            display: flex;
+            align-items: center;
+            padding: 0px 7px 0px 7px;
+        }
+    }
+    p{
+        margin: 0px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 500;
+        &.bigger{
+            font-size: 20px;
+        }
+    }
+
+}

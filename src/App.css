@@ -1,0 +1,10 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+.App {
+  text-align: center;
+  background-color: #F5F5F5;
+  width: 100hw;
+  height: 100vh;
+}

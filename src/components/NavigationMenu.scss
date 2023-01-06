@@ -1,0 +1,48 @@
+.NavigationMenu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: calc( 100vh - 96px);
+    background-color: white;
+    padding: 48px 12px 48px 12px;
+    display: grid;
+    animation-duration: 0.5s;
+    transition-duration: 0.5s;
+    width: 250px;
+    justify-content: space-between;
+    // box-sizing: border-box;
+    .button{
+        cursor: pointer;
+        margin: 4px 0px 4px 0px;
+        padding: 19px;
+        display: flex;
+        align-items: center;
+        // &:hover{
+        //     background-color: #F0F0F0;
+        //     border-radius: 15px;
+        // }
+        &.back-color{
+            background-color: #FAFAFA;
+            border-radius: 15px;
+            p{
+                color: rgb(85, 164, 236);
+            }
+        }
+        p{
+            animation-duration: 0.5s;
+            margin: 0px 0px 0px 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            &.bigger{
+                font-size: 25px;
+            }
+        }
+    }
+    &.mouse-up{
+        width: 64px;
+        p{
+            display: none;
+        }
+    }
+}
