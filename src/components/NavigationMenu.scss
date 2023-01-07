@@ -1,11 +1,13 @@
 .NavigationMenu{
+    border-right: 1px solid rgba(0, 0, 0, 0.158);
     position: absolute;
     top: 0px;
     left: 0px;
-    height: calc( 100vh - 96px);
+    height: calc( 100vh - 118px);
     background-color: white;
-    padding: 48px 12px 48px 12px;
-    display: grid;
+    padding: 48px 12px 70px 12px;
+    display: flex;
+    flex-direction: column;
     animation-duration: 0.5s;
     transition-duration: 0.5s;
     width: 250px;
@@ -51,7 +53,8 @@
 
 @media only screen and (max-width: 815px) {
     .NavigationMenu{
-        padding: 30px 3px 20px 3px;
+        height: calc( 100vh - 100px);
+        padding: 30px 3px 70px 3px;
         .button{
             padding: 15px;
         }
@@ -66,7 +69,8 @@
 
 @media only screen and (max-width: 410px) {
     .NavigationMenu{
-        padding: 20px 3px 10px 3px;
+        height: calc( 100vh - 90px);
+        padding: 20px 3px 70px 3px;
         .button{
             padding: 10px;
         }
