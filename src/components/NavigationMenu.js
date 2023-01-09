@@ -9,6 +9,7 @@ import "animate.css";
 
 function NavigationMenu() {
   const [menuHoverFlag, setMenuHoverFlag] = useState(false);
+  const [currentButton, setCurrentButton] = useState(1);
   return (
     <div
       className={menuHoverFlag ? "NavigationMenu" : "NavigationMenu mouse-up"}
@@ -28,20 +29,44 @@ function NavigationMenu() {
             NoledgeLoss
           </p>
         </div>
-        <div className="button back-color">
+        <div
+          className={currentButton === 1 ? "button back-color" : "button"}
+          onClick={() => {
+            if (menuHoverFlag) {
+              setMenuHoverFlag(false);
+              setCurrentButton(1);
+            }
+          }}
+        >
           <MenuLogo02 />
           <p className="animate__animated animate__fadeInLeft">Dashboard</p>
         </div>
-        <div className="button">
+        <div
+          className={currentButton === 2 ? "button back-color" : "button"}
+          onClick={() => {
+            if (menuHoverFlag) {
+              setMenuHoverFlag(false);
+              setCurrentButton(1);
+            }
+          }}
+        >
           <MenuLogo03 />
           <p className="animate__animated animate__fadeInLeft">Integrations</p>
         </div>
-        <div className="button">
+        <div
+          className={currentButton === 3 ? "button back-color" : "button"}
+          onClick={() => {
+            if (menuHoverFlag) {
+              setMenuHoverFlag(false);
+              setCurrentButton(1);
+            }
+          }}
+        >
           <MenuLogo04 />
           <p className="animate__animated animate__fadeInLeft">Details</p>
         </div>
       </div>
-      <div className="button">
+      <div className="button" onClick={() => setMenuHoverFlag(false)}>
         <MenuLogoLogout />
         <p className="animate__animated animate__fadeInLeft">Log out</p>
       </div>

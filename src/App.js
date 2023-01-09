@@ -1,6 +1,6 @@
 import './App.css';
 import NavigationMenu from './components/NavigationMenu';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Header from './components/Header';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Header/>
       <NavigationMenu/>
       MAIN
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

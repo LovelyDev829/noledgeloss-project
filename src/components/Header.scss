@@ -1,36 +1,56 @@
 .Header{
     // height: 50px;
-    padding: 12px 100px 12px 100px;
+    z-index: 2;
+    padding: 12px 30px 12px 30px;
     width: 100vw;
     background-color: #F5F5F5;
     position: fixed;
     top: 0px;
     left: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.158);
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
     box-sizing: border-box;
-    .search-box{
-        background-color: white;
-        border-radius: 10px;
-        padding: 11px 16px 11px 16px;
+    .middle{
+        margin: auto;
+        width: 100%;
+        max-width: 1200px;
         display: flex;
-        animation-duration: 1s;
-        transition-duration: 1s;
-        border: 2px solid rgba(255, 255, 255, 0.158);
-        input{
-            margin-left: 5px;
-            font-size: 14px;
-            font-weight: 600;
-            border: none;
-            width: 200px;
-            &:focus {
-                outline: none !important;
+        justify-content: flex-end;
+        .search-box{
+            width: fit-content;
+            background-color: white;
+            border-radius: 10px;
+            padding: 11px 16px 11px 16px;
+            display: flex;
+            animation-duration: 1s;
+            transition-duration: 1s;
+            border: 2px solid rgba(255, 255, 255, 0.158);
+            input{
+                margin-left: 5px;
+                font-size: 14px;
+                font-weight: 600;
+                border: none;
+                width: 200px;
+                &:focus {
+                    outline: none !important;
+                }
+            }
+            &:hover{
+                border: 2px solid rgba(0, 0, 0, 0.158);
             }
         }
-        &:hover{
-            border: 2px solid rgba(0, 0, 0, 0.158);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .Header{
+        padding: 12px 10px 12px 10px;
+        .middle{
+            justify-content: center;
+            .search-box{
+                input{
+                    width: 150px;
+                }
+            }
         }
     }
 }
