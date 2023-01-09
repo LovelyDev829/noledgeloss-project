@@ -46,7 +46,7 @@ function NavigationMenu() {
           onClick={() => {
             if (menuHoverFlag) {
               setMenuHoverFlag(false);
-              setCurrentButton(1);
+              setCurrentButton(2);
             }
           }}
         >
@@ -58,7 +58,7 @@ function NavigationMenu() {
           onClick={() => {
             if (menuHoverFlag) {
               setMenuHoverFlag(false);
-              setCurrentButton(1);
+              setCurrentButton(3);
             }
           }}
         >
