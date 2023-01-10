@@ -15,17 +15,15 @@ function NavigationMenu() {
       className={menuHoverFlag ? "NavigationMenu" : "NavigationMenu mouse-up"}
       onMouseOver={() => {
         setMenuHoverFlag(true);
-        console.log("over");
       }}
       onMouseLeave={() => {
         setMenuHoverFlag(false);
-        console.log("leave");
       }}
     >
       <div className="button-group">
         <div className="button">
           <MenuLogo01 />
-          <p className="animate__animated animate__fadeInLeft bigger">
+          <p className="animate__animated animate__fadeIn bigger">
             NoledgeLoss
           </p>
         </div>
@@ -33,42 +31,39 @@ function NavigationMenu() {
           className={currentButton === 1 ? "button back-color" : "button"}
           onClick={() => {
             if (menuHoverFlag) {
-              setMenuHoverFlag(false);
               setCurrentButton(1);
             }
           }}
         >
-          <MenuLogo02 />
-          <p className="animate__animated animate__fadeInLeft">Dashboard</p>
+          <MenuLogo02 className={currentButton === 1 ? "blue" : ""} />
+          <p className="animate__animated animate__fadeIn">Dashboard</p>
         </div>
         <div
           className={currentButton === 2 ? "button back-color" : "button"}
           onClick={() => {
             if (menuHoverFlag) {
-              setMenuHoverFlag(false);
               setCurrentButton(2);
             }
           }}
         >
-          <MenuLogo03 />
-          <p className="animate__animated animate__fadeInLeft">Integrations</p>
+          <MenuLogo03 className={currentButton === 2 ? "blue" : ""} />
+          <p className="animate__animated animate__fadeIn">Integrations</p>
         </div>
         <div
           className={currentButton === 3 ? "button back-color" : "button"}
           onClick={() => {
             if (menuHoverFlag) {
-              setMenuHoverFlag(false);
               setCurrentButton(3);
             }
           }}
         >
-          <MenuLogo04 />
-          <p className="animate__animated animate__fadeInLeft">Details</p>
+          <MenuLogo04 className={currentButton === 3 ? "blue" : ""} />
+          <p className="animate__animated animate__fadeIn">Details</p>
         </div>
       </div>
-      <div className="button" onClick={() => setMenuHoverFlag(false)}>
+      <div className="button" >
         <MenuLogoLogout />
-        <p className="animate__animated animate__fadeInLeft">Log out</p>
+        <p className="animate__animated animate__fadeIn">Log out</p>
       </div>
     </div>
   );

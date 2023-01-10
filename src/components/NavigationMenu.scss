@@ -8,22 +8,19 @@
     padding: 70px 12px 48px 12px;
     display: flex;
     flex-direction: column;
-    animation-duration: 0.5s;
-    transition-duration: 0.5s;
-    width: 250px;
+    animation-duration: 0.1s;
+    transition-duration: 0.1s;
+    width: 230px;
     justify-content: space-between;
     // box-sizing: border-box;
     .button{
         cursor: pointer;
         margin: 4px 0px 4px 0px;
-        padding: 19px;
+        padding: 12px;
         display: flex;
         align-items: center;
         height: fit-content;
-        // &:hover{
-        //     background-color: #F0F0F0;
-        //     border-radius: 15px;
-        // }
+        position: relative;
         &.back-color{
             background-color: #FAFAFA;
             border-radius: 15px;
@@ -32,18 +29,23 @@
             }
         }
         p{
+            position: absolute;
+            left: 40px;
             animation-duration: 0.5s;
             margin: 0px 0px 0px 20px;
-            font-size: 20px;
+            font-size: 1.125rem;
             font-family: sans-serif;
-            font-weight: 700;
+            font-weight: 600;
             &.bigger{
-                font-size: 25px;
+                font-size: 1.325rem;
             }
+        }
+        svg.blue{
+            // filter: sepia(10%) hue-rotate(349deg) saturate(5000%);
         }
     }
     &.mouse-up{
-        width: 64px;
+        width: 51px;
         p{
             display: none;
         }
@@ -55,15 +57,20 @@
     .NavigationMenu{
         height: calc( 100vh - 100px);
         padding: 70px 3px 30px 3px;
+        width: 200px;
         .button{
-            padding: 15px;
+            padding: 10px;
             p{
-                font-size: 16px;
+                left: 30px;
+                font-size: 1.025rem;
                 font-weight: 600;
+                &.bigger{
+                    font-size: 1.225rem;
+                }
             }
         }
         &.mouse-up{
-            width: 58px;
+            width: 47px;
             p{
                 display: none;
             }
@@ -75,15 +82,20 @@
     .NavigationMenu{
         height: calc( 100vh - 90px);
         padding: 70px 3px 20px 3px;
+        width: 180px;
         .button{
-            padding: 10px;
+            padding: 8px;
             p{
-                font-size: 14px;
-                font-weight: 500;
+                left: 25px;
+                font-size: 0.925rem;
+                font-weight: 600;
+                &.bigger{
+                    font-size: 1.125rem;
+                }
             }
         }
         &.mouse-up{
-            width: 46px;
+            width: 42px;
             p{
                 display: none;
             }
