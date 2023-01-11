@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./NavigationMenu.scss";
-import { ReactComponent as MenuLogo01 } from "../assets/menu-logo-01.svg";
 import { ReactComponent as MenuLogo02 } from "../assets/menu-logo-02.svg";
 import { ReactComponent as MenuLogo03 } from "../assets/menu-logo-03.svg";
 import { ReactComponent as MenuLogo04 } from "../assets/menu-logo-04.svg";
@@ -21,12 +20,6 @@ function NavigationMenu() {
       }}
     >
       <div className="button-group">
-        <div className="button">
-          <MenuLogo01 />
-          <p className="animate__animated animate__fadeIn bigger">
-            NoledgeLoss
-          </p>
-        </div>
         <div
           className={currentButton === 1 ? "button back-color" : "button"}
           onClick={() => {

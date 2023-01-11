@@ -1,7 +1,7 @@
 .Header{
     // height: 50px;
     z-index: 2;
-    padding: 12px 30px 12px 30px;
+    padding: 12px 30px 12px 23px;
     width: 100vw;
     background-color: #F5F5F5;
     position: fixed;
@@ -12,9 +12,22 @@
     .middle{
         margin: auto;
         width: 100%;
-        max-width: 1200px;
+        // max-width: 1200px;
+        // box-sizing: border-box;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
+        .main-icon{
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 1.325rem;
+                font-family: sans-serif;
+                font-weight: 600;
+                margin: 0px;
+                margin-left: 10px;
+            }
+        }
         .search-box{
             width: fit-content;
             background-color: white;
@@ -41,11 +54,23 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 488px) {
+    .Header{
+        .middle{
+            .main-icon{
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 339px) {
     .Header{
         padding: 10px 10px 10px 10px;
         .middle{
-            justify-content: center;
+            // justify-content: center;
             .search-box{
                 input{
                     width: 150px;
