@@ -1,0 +1,158 @@
+.TimeLine{
+    max-width: 1000px;
+    margin: auto;
+    animation-duration: 0.5s;
+    transition-duration: 0.5s;
+    font-family: 'Circular-Loom';
+    padding: 10px;
+    box-sizing: border-box;
+    user-select: none;
+    .today-display{
+        margin: auto;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: #F5F5F5;
+        width: fit-content;
+        padding: 5px 10px 5px 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 2px #0000006a;
+        transition-duration: 0.15s;
+        &:hover{
+            box-shadow: 0px 0px 9px #0000006a;
+        }
+    }
+    .timeline-box{
+        // background-color: #b63e3e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  ////////////////////////
+        padding: 0px 10px 10px 10px;
+        .button{
+            background-color: #F5F5F5;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 2px #0000006a;
+            transition-duration: 0.15s;
+            &:hover{
+                box-shadow: 0px 0px 9px #0000006a;
+            }
+        }
+        .slider-box{
+            // background-color: #F5F5F5;
+            // height: 30px;
+            width: calc(100% - 120px);
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            padding: 25px 0px 10px 0px;
+            .day-item{
+                min-width: 50px;
+                background-color: #ffffff;
+                padding: 5px;
+                margin: 0px 5px 0px 5px;
+                border-radius: 5px;
+                transition-duration: 0.15s;
+                .weekday{
+                    border-bottom: 2px solid;
+                }
+                &.sunday{
+                    background-color: #fd000033;
+                }
+                &.saturday{
+                    background-color: #00bbff33;
+                }
+                &.today{
+                    background-color: #00ff22aa;
+                }
+                border: 1px solid white;
+                &:hover{
+                    border: 1px solid black;
+                    box-shadow: 0px 0px 9px #0000006a;
+                }
+            }
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #ffffff;
+                height: 10px;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius:10px;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            } 
+        }
+    }
+}
+
+@keyframes animatename{
+    0%{
+        background-color: #00ff22aa;
+        border: 1px solid black;
+        box-shadow: 0px 0px 9px #0000006a;
+    }
+    10%{
+        background-color: #00ff22aa;
+        border: 1px solid black;
+        box-shadow: 0px 0px 9px #0000006a;
+        }
+    20%{
+        background-color: white;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: none;
+    }
+    30%{
+        background-color: #00ff22aa;
+        border: 1px solid black;
+        box-shadow: 0px 0px 9px #0000006a;
+        }
+    40%{
+        background-color: white;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: none;
+    }
+    49%{
+        background-color: #00ff22aa;
+        border: 1px solid black;
+        box-shadow: 0px 0px 9px #0000006a;
+        }
+    58%{
+        background-color: white;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: none;
+    }
+    67%{
+        background-color: #00ff22aa;
+        border: 1px solid black;
+        box-shadow: 0px 0px 9px #0000006a;
+        }
+    81%{
+        background-color: rgba(255, 255, 255, 0.647);
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: none;
+    }
+    85%{
+        background-color: #00ff222f;
+        border: 1px solid rgba(0, 0, 0, 0.478);
+        box-shadow: 0px 0px 9px #0000002a;
+        }
+    100%{
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: none;
+    }
+}
+  
+.animate{
+    animation: animatename 3s ease-in;
+}

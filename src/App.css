@@ -7,4 +7,6 @@ body{
   background-color: #F5F5F5;
   width: 100hw;
   height: 100vh;
+  padding: 70px 30px 0px 80px;
+  box-sizing: border-box;
 }

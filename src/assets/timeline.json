@@ -1,0 +1,74 @@
+{
+  "customer_name": "Netflix",
+  "events": [
+    {
+      "event_name": "Team Meeting",
+      "event_date": "2023-01-12",
+      "event_time": "10:00",
+      "event_interaction_source": "slack",
+      "event_description": "Weekly team meeting to discuss progress and plan next steps",
+      "event_team": "Sales"
+    },
+    {
+      "event_name": "Product Launch",
+      "event_date": "2023-01-12",
+      "event_interaction_source": "Gmail",
+      "event_time": "13:00",
+      "event_description": "Launch of new product at the trade show",
+      "event_team": "Service"
+    },
+    {
+      "event_name": "Concert",
+      "event_date": "2023-01-12",
+      "event_time": "15:00",
+      "event_interaction_source": "Zendesk",
+      "event_description": "Concert with band XYZ",
+      "event_team": "Development"
+    },
+    {
+      "event_name": "Birthday Party",
+      "event_date": "2023-01-12",
+      "event_time": "19:00",
+      "event_interaction_source": "zoom",
+      "event_description": "Celebrating my friend's birthday",
+      "event_team": "Customer Success."
+    }, {
+      "event_name": "Product Launch",
+      "event_date": "2023-01-13",
+      "event_interaction_source": "Whatsapp",
+      "event_time": "11:00",
+      "event_description": "Launch of new product at the trade show",
+      "event_team": "Service"
+    }, {
+      "event_name": "Product Launch",
+      "event_date": "2023-01-13",
+      "event_interaction_source": "Salesforce",
+      "event_time": "13:00",
+      "event_description": "Launch of new product at the trade show",
+      "event_team": "Customer Success"
+    }, {
+      "event_name": "Product Launch",
+      "event_date": "2023-01-13",
+      "event_interaction_source": "Googledrive",
+      "event_time": "17:00",
+      "event_description": "Launch of new product at the trade show",
+      "event_team": "Customer Success"
+    }, {
+      "event_name": "Product Launch",
+      "event_date": "2023-01-14",
+      "event_interaction_source": "google spreedsheet",
+      "event_time": "13:00",
+      "event_description": "Launch of new product at the trade show",
+      "event_team": "SaLes"
+    },
+ {
+      "event_name": "Product Launch",
+      "event_date": "2023-01-14",
+      "event_interaction_source": "Jira",
+      "event_time": "16:00",
+      "event_description": "Launch of new product at the trade show",
+      "event_team": "Customer Success"
+    }
+  ],
+  "customer_booklet":""
+ }
